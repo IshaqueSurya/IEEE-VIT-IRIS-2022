@@ -213,6 +213,12 @@ input[type="radio"] {
   transform: translate3d(-15%, 0, -100px);
 }
 
+@media (max-width: 500px){
+  #slider {
+    width: 65%;
+    height: 40vw;
+  }
+}
 
 /* image carousel ends */
 
