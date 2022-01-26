@@ -4,7 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
     <title>IRIS 2022</title>
+
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link
@@ -20,7 +34,9 @@
   </head>
   <body>
     <nav id="navbar" class="navbar sticky-top navbar-expand-lg navbar-dark">
-      <a href="https://ieee.vit.edu.in/" class="navbar-brand">IEEE VIT</a>
+      <a href="https://ieee.vit.edu.in/" class="navbar-brand"
+        ><img src="img/logo.png" width="170px" alt="" srcset=""
+      /></a>
 
       <button
         type="button"
@@ -35,7 +51,7 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
           <li class="nav-item">
-            <a href="#aboutiris" class="nav-link">About IRIS</a>
+            <a href="#intro" class="nav-link">About IRIS</a>
           </li>
           <li class="nav-item">
             <a href="#imagecarousel" class="nav-link">IRIS 2021</a>
@@ -50,182 +66,235 @@
       </div>
     </nav>
 
-    <div id="iris-letters">
-      <h2 class="iris-letter" id="iris-letter1">Inspire</h2>
-      <h2 class="iris-letter" id="iris-letter2">Resonate</h2>
-      <h2 class="iris-letter" id="iris-letter3">Integrate</h2>
-      <h2 class="iris-letter" id="iris-letter4">Succeed</h2>
-    </div>
-
-    <div class="aboutiris" id="aboutiris">
-      <h3>About IRIS</h3>
-      <p>
-        IRIS is a series of talks given by people from various walks of life. An
-        acronym for Inspire, Resonate, Integrate, and Succeed. IRIS aims at
-        imparting knowledge and key life lessons through people, who have faced
-        multiple challenges as they struggled to make it to the top of their
-        careers.
-      </p>
-    </div>
-
-    <div class="imagecarousel" id="imagecarousel">
-      <h3 class="text">Glimses of Previous year's IRIS</h3>
-      <section id="slider">
-        <input type="radio" name="slider" id="s1" checked />
-        <input type="radio" name="slider" id="s2" />
-        <input type="radio" name="slider" id="s3" />
-        <input type="radio" name="slider" id="s4" />
-        <input type="radio" name="slider" id="s5" />
-
-        <label for="s1" id="slide1"
-          ><img src="images/iris_img1.jpg" alt=""
-        /></label>
-        <label for="s2" id="slide2"
-          ><img src="images/iris_img2.jpg" alt=""
-        /></label>
-        <label for="s3" id="slide3"
-          ><img src="images/iris_img3.jpg" alt=""
-        /></label>
-        <label for="s4" id="slide4"
-          ><img src="images/iris_img4.jpg" alt=""
-        /></label>
-        <label for="s5" id="slide5"
-          ><img src="images/iris_img5.jpg" alt=""
-        /></label>
-      </section>
-    </div>
-
-    <div class="eventschedule" id="eventschedule">
-      <h3 class="text">IRIS 2022 Schedule</h3>
-      <div class="eventcard" id="event1">
-        <div class="eventimage">
-          <img class="eventimage" src="images/speaker1.jpg" alt="" />
+    <main class="main-container">
+      <!-- main logo and background-image  -->
+      <div class="logo-header" id="home">
+        <div class="iris-animation-container">
+          <div class="perspective-text">
+            <div class="perspective-line">
+              <p class="animation-p"></p>
+              <p class="animation-p">IRIS 2022</p>
+            </div>
+            <div class="perspective-line">
+              <p class="animation-p">INSPIRE</p>
+              <p class="animation-p"></p>
+            </div>
+            <div class="perspective-line">
+              <p class="animation-p">RESONATE</p>
+              <p class="animation-p"></p>
+            </div>
+            <div class="perspective-line">
+              <p class="animation-p">INTEGRATE</p>
+              <p class="animation-p"></p>
+            </div>
+            <div class="perspective-line">
+              <p class="animation-p">SUCCEED</p>
+              <p class="animation-p"></p>
+            </div>
+          </div>
         </div>
-
-        <div class="eventcontent">
-          <p class="name">Rajagopala Chidambaram</p>
-          <p class="designation">Indian Physicist</p>
-          <p class="speakerdescription">
-            Known for India's Nuclear Weapons Programme
-          </p>
-        </div>
-
-        <div class="eventregister">
-          <span class="datetime">07 February 2021</span>
-          <p class="datetime">Timing: 4PM Onwards</p>
-          <button class="registerbutton btn btn-primary">Register Here</button>
+        <div class="custom-shape-divider-bottom-1641509526">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+              opacity=".25"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+              opacity=".5"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+              class="shape-fill"
+            ></path>
+          </svg>
         </div>
       </div>
-      <div class="eventcard" id="event2">
-        <div class="eventimage">
-          <img class="eventimage" src="images/speaker1.jpg" alt="" />
-        </div>
 
-        <div class="eventcontent">
-          <p class="name">Shronit Ladhani</p>
-          <p class="designation">Entrepreneur & Angel Investor</p>
-          <p class="speakerdescription">Founder of CareerNinja, TEDx Speaker</p>
-        </div>
+      <div class="intro" id="intro">
+        <div class="intro-header"><h1>About IRIS</h1></div>
 
-        <div class="eventregister">
-          <span class="datetime">13 February 2021</span>
-          <p class="datetime">Timing: 4PM Onwards</p>
-          <button class="registerbutton btn btn-primary">Register Here</button>
-        </div>
+        <h3>
+          IRIS is a series of talks given by people from various walks of life.
+          An acronym for Inspire, Resonate, Integrate, and Succeed. IRIS aims at
+          imparting knowledge and key life lessons through people, who have
+          faced multiple challenges as they struggled to make it to the top of
+          their careers.
+        </h3>
       </div>
-      <div class="eventcard" id="event3">
-        <div class="eventimage">
-          <img class="eventimage" src="images/speaker1.jpg" alt="" />
-        </div>
 
-        <div class="eventcontent">
-          <p class="name">Yuvraj Walmiki</p>
-          <p class="designation">Indian Field Hockey Player</p>
-          <p class="speakerdescription">
-            Brand Ambassador of Do Good Sports NGO, Mumbai
-          </p>
-        </div>
+      <div class="imagecarousel" id="imagecarousel">
+        <h3 class="text">Glimpses of Previous year's IRIS</h3>
+        <section id="slider">
+          <input type="radio" name="slider" id="s1" checked />
+          <input type="radio" name="slider" id="s2" />
+          <input type="radio" name="slider" id="s3" />
+          <input type="radio" name="slider" id="s4" />
+          <input type="radio" name="slider" id="s5" />
 
-        <div class="eventregister">
-          <span class="datetime">14 February 2021</span>
-          <p class="datetime">Timing: 12PM Onwards</p>
-          <button class="registerbutton btn btn-primary">Register Here</button>
-        </div>
+          <label for="s1" id="slide1"
+            ><img src="img/iris_img1.jpg" alt=""
+          /></label>
+          <label for="s2" id="slide2"
+            ><img src="img/iris_img2.jpg" alt=""
+          /></label>
+          <label for="s3" id="slide3"
+            ><img src="img/iris_img3.jpg" alt=""
+          /></label>
+          <label for="s4" id="slide4"
+            ><img src="img/iris_img4.jpg" alt=""
+          /></label>
+          <label for="s5" id="slide5"
+            ><img src="img/iris_img5.jpg" alt=""
+          /></label>
+        </section>
       </div>
-    </div>
 
-    <div id="speakers" class="speakers">
-      <div class="jumbotron">
-        <h3>Our Speakers</h3>
-        <div class="container">
-          <div class="card mb-3">
-            <img class="card-img-top" src="images/speaker1.jpg" alt="" />
-            <div class="card-body">
-              <h5 class="card-title">Peter Parker</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis voluptate, veniam nam ratione ipsum praesentium rem
-                dolores nesciunt suscipit amet vitae placeat, consectetur, illum
-                libero sed animi voluptatum! Saepe, perspiciatis!
-              </p>
-            </div>
+      <div class="eventschedule" id="eventschedule">
+        <h3 class="text">IRIS 2022 Schedule</h3>
+        <div class="eventcard" id="event1">
+          <div class="eventimage">
+            <img class="eventimage" src="img/speaker1.jpg" alt="" />
           </div>
 
-          <div class="card mb-3">
-            <img class="card-img-top" src="images/speaker1.jpg" alt="" />
-            <div class="card-body">
-              <h5 class="card-title">Gingka Hagane</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis voluptate, veniam nam ratione ipsum praesentium rem
-                dolores nesciunt suscipit amet vitae placeat, consectetur, illum
-                libero sed animi voluptatum! Saepe, perspiciatis!
-              </p>
-            </div>
+          <div class="eventcontent">
+            <p class="name">Rajagopala Chidambaram</p>
+            <p class="designation">Indian Physicist</p>
+            <p class="speakerdescription">
+              Known for India's Nuclear Weapons Programme
+            </p>
           </div>
 
-          <div class="card mb-3">
-            <img class="card-img-top" src="images/speaker1.jpg" alt="" />
-            <div class="card-body">
-              <h5 class="card-title">Mercenary Tao</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis voluptate, veniam nam ratione ipsum praesentium rem
-                dolores nesciunt suscipit amet vitae placeat, consectetur, illum
-                libero sed animi voluptatum! Saepe, perspiciatis!
-              </p>
-            </div>
+          <div class="eventregister">
+            <span class="datetime">07 February 2021</span>
+            <p class="datetime">Timing: 4PM Onwards</p>
+            <button class="registerbutton btn btn-primary">
+              Register Here
+            </button>
+          </div>
+        </div>
+        <div class="eventcard" id="event2">
+          <div class="eventimage">
+            <img class="eventimage" src="img/speaker1.jpg" alt="" />
           </div>
 
-          <div class="card mb-3">
-            <img class="card-img-top" src="images/speaker1.jpg" alt="" />
-            <div class="card-body">
-              <h5 class="card-title">Freddy Fazbear</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis voluptate, veniam nam ratione ipsum praesentium rem
-                dolores nesciunt suscipit amet vitae placeat, consectetur, illum
-                libero sed animi voluptatum! Saepe, perspiciatis!
-              </p>
-            </div>
+          <div class="eventcontent">
+            <p class="name">Shronit Ladhani</p>
+            <p class="designation">Entrepreneur & Angel Investor</p>
+            <p class="speakerdescription">
+              Founder of CareerNinja, TEDx Speaker
+            </p>
           </div>
 
-          <div class="card mb-3">
-            <img class="card-img-top" src="images/speaker1.jpg" alt="" />
-            <div class="card-body">
-              <h5 class="card-title">Trent Fernandez-Mercer</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis voluptate, veniam nam ratione ipsum praesentium rem
-                dolores nesciunt suscipit amet vitae placeat, consectetur, illum
-                libero sed animi voluptatum! Saepe, perspiciatis!
-              </p>
-            </div>
+          <div class="eventregister">
+            <span class="datetime">13 February 2021</span>
+            <p class="datetime">Timing: 4PM Onwards</p>
+            <button class="registerbutton btn btn-primary">
+              Register Here
+            </button>
+          </div>
+        </div>
+        <div class="eventcard" id="event3">
+          <div class="eventimage">
+            <img class="eventimage" src="img/speaker1.jpg" alt="" />
+          </div>
+
+          <div class="eventcontent">
+            <p class="name">Yuvraj Walmiki</p>
+            <p class="designation">Indian Field Hockey Player</p>
+            <p class="speakerdescription">
+              Brand Ambassador of Do Good Sports NGO, Mumbai
+            </p>
+          </div>
+
+          <div class="eventregister">
+            <span class="datetime">14 February 2021</span>
+            <p class="datetime">Timing: 12PM Onwards</p>
+            <button class="registerbutton btn btn-primary">
+              Register Here
+            </button>
           </div>
         </div>
       </div>
-    </div>
 
+      <h3 class="text" id="speakers">IRIS 2022 Schedule</h3>
+
+      <div class="card-container">
+        <div
+          class="card"
+          id="card1"
+          style="background-image: url(./img/shronit-ladhani.png)"
+        >
+          <div class="info" id="info1">
+            <div class="content">
+              <h2>Shronit Ladhani</h2>
+              <p>Featured in Brainfeed's 30 Under 30 Entrepreneurs of India</p>
+            </div>
+            <p></p>
+            <a class="link" href="#" target="_blank"
+              ><i class="fa fa-twitter fa-2x social"></i
+            ></a>
+            <a class="link" href="#" target="_blank"
+              ><i class="fa fa-dribbble fa-2x social"></i
+            ></a>
+            <a class="link" href="#" target="_blank"
+              ><i class="fa fa-codepen fa-2x social"></i
+            ></a>
+          </div>
+        </div>
+        <div
+          class="card"
+          id="card2"
+          style="background-image: url(./img/shronit-ladhani.png)"
+        >
+          <div class="info" id="info2">
+            <div class="content">
+              <h2>Shronit Ladhani</h2>
+              <p>Featured in Brainfeed's 30 Under 30 Entrepreneurs of India</p>
+            </div>
+            <p></p>
+            <a class="link" href="#" target="_blank"
+              ><i class="fa fa-twitter fa-2x social"></i
+            ></a>
+            <a class="link" href="#" target="_blank"
+              ><i class="fa fa-dribbble fa-2x social"></i
+            ></a>
+            <a class="link" href="#" target="_blank"
+              ><i class="fa fa-codepen fa-2x social"></i
+            ></a>
+          </div>
+        </div>
+        <div
+          class="card"
+          id="card3"
+          style="background-image: url(./img/shronit-ladhani.png)"
+        >
+          <div class="info" id="info3">
+            <div class="content">
+              <h2>Shronit Ladhani</h2>
+              <p>Featured in Brainfeed's 30 Under 30 Entrepreneurs of India</p>
+            </div>
+            <p></p>
+            <a class="link" href="#" target="_blank"
+              ><i class="fa fa-twitter fa-2x social"></i
+            ></a>
+            <a class="link" href="#" target="_blank"
+              ><i class="fa fa-dribbble fa-2x social"></i
+            ></a>
+            <a class="link" href="#" target="_blank"
+              ><i class="fa fa-codepen fa-2x social"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </main>
     <div class="footer">
       <h3 class="text">Connect With Us</h3>
       <div class="links">
@@ -245,6 +314,26 @@
       <p class="text">IEEE-VIT STUDENT BRANCH</p>
       <span class="text">CODE OF CONDUCT</span>
     </div>
-    <script src="js/main.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      src="https://kit.fontawesome.com/bd6c243322.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
