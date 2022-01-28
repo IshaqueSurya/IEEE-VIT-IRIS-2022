@@ -556,7 +556,7 @@ h5 {
 
 .speaker-card__front {
   background-color: var(--clr);
-  background-image: url("/img/shronit-ladhani.png");
+  background-image: url("../img/shronit-ladhani.png");
   object-fit: contain;
   background-size: cover;
   background-blend-mode: overlay;
