@@ -355,7 +355,6 @@ input[type="radio"]:checked {
 .eventcontent {
   width: 50%;
   margin-right: 2.5%;
-  margin-left: 20px;
 }
 
 .eventcontent .name {
