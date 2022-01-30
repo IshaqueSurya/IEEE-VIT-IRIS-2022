@@ -1,20 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-margin-top: 55px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-#preloader{
+#preloader {
   background: #1e282d url(../images/loader.gif) no-repeat center center;
   height: 100vh;
   width: 100%;
@@ -26,7 +24,7 @@ html {
   background-color: rgb(30, 40, 45);
 }
 
-h3{
+h3 {
   font-size: 25px;
 }
 
@@ -119,7 +117,6 @@ p.animation-p {
   position: relative;
 }
 
-
 .intro {
   margin: 2rem;
   text-align: justify;
@@ -149,12 +146,11 @@ hr {
   font-weight: 350;
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
   .intro h3 {
     font-size: 18px;
   }
 }
-
 
 /* image carousel */
 
@@ -291,7 +287,6 @@ input[type="radio"]:checked {
 }
 /* image carousel ends */
 
-
 /* This is the wave code */
 .custom-shape-divider-bottom-1641509526 {
   position: absolute;
@@ -314,7 +309,6 @@ input[type="radio"]:checked {
   fill: #ffffff;
 }
 
-
 /* event schedule */
 
 .eventschedule {
@@ -322,7 +316,7 @@ input[type="radio"]:checked {
   margin: 10px auto;
 }
 
-.eventschedule>.text{
+.eventschedule > .text {
   padding-top: 20px;
 }
 
@@ -369,7 +363,7 @@ input[type="radio"]:checked {
   font-size: 22px;
 }
 
-.eventregister{
+.eventregister {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -385,15 +379,15 @@ input[type="radio"]:checked {
   color: #fff;
 }
 
-.eventregister button:hover{
+.eventregister button:hover {
   background-color: transparent;
   color: #000;
   border-color: #141a28;
-} 
+}
 
-.eventregister button:active{
+.eventregister button:active {
   background-color: rgb(219, 213, 213);
-} 
+}
 
 .eventregister .datetime {
   font-size: 18px;
@@ -418,45 +412,42 @@ input[type="radio"]:checked {
   }
 }
 
-@media (min-width: 769px){
-
-  .eventcard{
+@media (min-width: 769px) {
+  .eventcard {
     position: relative;
   }
-  .eventimage img{
+  .eventimage img {
     margin-left: 20px;
   }
-  
 
-  span.datetime{
+  span.datetime {
     position: absolute;
-    top: 40%; 
+    top: 40%;
     left: 0;
-    transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-90deg);
     margin: 20px;
   }
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
   .eventcontent .name {
     font-size: 20px;
   }
-  
+
   .eventcontent .designation {
     font-size: 17px;
   }
-  
+
   .eventcontent .speakerdescription {
     font-size: 18px;
   }
 }
 
-@media (max-width: 768px){
-  span .datetime{
+@media (max-width: 768px) {
+  span .datetime {
     width: 100%;
   }
 }
-
 
 /* This is for cards  */
 h3#speakers {
@@ -468,6 +459,7 @@ h3#speakers {
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 2rem;
+  margin-top: 15px;
 }
 
 h2,
@@ -475,7 +467,6 @@ h3,
 h5 {
   text-align: center;
 }
-
 
 /* footer */
 .footer {
@@ -501,7 +492,6 @@ h5 {
   text-decoration: none;
   color: #fff;
 }
-
 
 /* flipping speaker card */
 
@@ -604,7 +594,6 @@ h5 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 
 .speaker-links {
@@ -617,8 +606,8 @@ h5 {
   color: #fff;
 }
 
-@media screen and (min-width: 933px) and (max-width: 1224px){
-  .speaker-card{
+@media screen and (min-width: 933px) and (max-width: 1224px) {
+  .speaker-card {
     margin-right: 60px;
     margin-left: 60px;
   }
