@@ -547,7 +547,7 @@ h5 {
 
 .speaker-card__front {
   background-color: var(--clr);
-  background-image: url("../images/shronit-ladhani.png");
+  /* background-image: url("../images/shronit-ladhani.png"); */
   object-fit: contain;
   background-size: cover;
   background-blend-mode: overlay;
@@ -570,6 +570,25 @@ h5 {
   border-radius: 10px;
   transform: var(--level-one);
 }
+
+.speaker-card__front#speaker1{
+    background-image: url("../images/PopatraoPawar2.jpg");
+}
+
+.speaker-card__front#speaker2{
+    background-image: url("../images/AbhijeetYadav.jpg");
+    background-position: 30%;
+}
+
+.speaker-card__front#speaker3{
+    background-image: url("../images/ShamsAalamShaikh2.jpg");
+    background-position: 70%;
+}
+
+.speaker-card__front#speaker4{
+    background-image: url("../images/VikramSir2.jpg");
+}
+
 
 .speaker-card__title {
   font-size: 30px;
