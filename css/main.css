@@ -341,8 +341,6 @@ input[type="radio"]:checked {
 .eventimage {
   width: 180px;
   height: 180px;
-  /* height: 100%; */
-  margin-right: 10px;
 }
 
 .eventimage img {
