@@ -616,3 +616,10 @@ h5 {
   text-decoration: none;
   color: #fff;
 }
+
+@media screen and (min-width: 933px) and (max-width: 1224px){
+  .speaker-card{
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+}
