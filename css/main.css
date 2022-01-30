@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald:400,700");
+
 
 
 * {
@@ -17,6 +17,9 @@ html {
   background-color: rgb(30, 40, 45);
 }
 
+h3{
+  font-size: 25px;
+}
 
 /* IRIS ANIMATION */
 .iris-animation-container {
@@ -127,12 +130,19 @@ hr {
 .intro h1 {
   padding: 0.5rem;
   margin: 0.5rem;
+  font-size: 25px;
 }
 
 .intro h3 {
   /* margin: 2rem 0; */
   padding: 1rem;
   font-weight: 350;
+}
+
+@media (max-width: 600px){
+  .intro h3 {
+    font-size: 18px;
+  }
 }
 
 
@@ -320,8 +330,8 @@ input[type="radio"]:checked {
 }
 
 .eventimage {
-  width: 250px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   /* height: 100%; */
   margin-right: 10px;
 }
@@ -359,12 +369,17 @@ input[type="radio"]:checked {
   background-color: #141a28;
   border: 1.5px solid #141a28;
   font-size: large;
+  color: #fff;
 }
 
 .eventregister button:hover{
   background-color: transparent;
   color: #000;
   border-color: #141a28;
+} 
+
+.eventregister button:active{
+  background-color: rgb(219, 213, 213);
 } 
 
 .eventregister .datetime {
@@ -406,6 +421,20 @@ input[type="radio"]:checked {
     left: 0;
     transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
     margin: 20px;
+  }
+}
+
+@media (max-width: 600px){
+  .eventcontent .name {
+    font-size: 20px;
+  }
+  
+  .eventcontent .designation {
+    font-size: 17px;
+  }
+  
+  .eventcontent .speakerdescription {
+    font-size: 18px;
   }
 }
 
@@ -547,8 +576,8 @@ h5 {
 
 .speaker-card__body {
   transform: var(--level-two);
-  font-weight: var(fw-normal);
-  font-size: 20px;
+  font-weight: 0;
+  font-size: 16px;
 }
 
 .speaker-card__back {
