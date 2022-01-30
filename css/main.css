@@ -589,6 +589,14 @@ h5 {
     background-image: url("../images/VikramSir2.jpg");
 }
 
+.speaker-card__title#speaker1,
+ .speaker-card__title#speaker2,
+ .speaker-card__title#speaker3,
+ .speaker-card__title#speaker4{
+  font-size: 25px;
+  margin: 20px;
+}
+
 
 .speaker-card__title {
   font-size: 30px;
